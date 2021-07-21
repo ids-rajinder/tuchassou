@@ -1,0 +1,25 @@
+.search-destination.with-select span.filter-option.pull-left {
+    line-height: 54px;
+}
+
+.half-map-search-inner-wrap .search-destination.with-select span.filter-option.pull-left {
+    line-height: 42px;
+}
+
+body .search-date-range-arrive {
+    width: 100%;
+}
+
+.lc a {
+    font-size: 16px;
+    margin: 0px 20x;
+}
+
+.lc {
+    font-size: 17px;
+}
+
+body .map-notfound {
+    left: 50%;
+    transform: translate(-50%, -0%);
+}

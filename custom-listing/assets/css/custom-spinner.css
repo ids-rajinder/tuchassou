@@ -1,0 +1,75 @@
+/*img.gform_ajax_spinner{
+  position: fixed !important;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block !important;
+  overflow: hidden !important;
+  display: block;
+  width: 230px;
+  height: 30px;
+  margin: 5% auto;
+  background-color: rgba(0,0,0);
+  / fall back /
+  background-color: rgba(0,0,0,0.7);
+  url('images/preloading.gif'); / fallback GIF spinner /
+  background-image: linear-gradient(transparent,transparent), url('images/oval.svg'); / SVG spinner /
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: center center;
+  }
+
+
+  body .gw-number-rows table.gfield_list {
+    counter-reset: gflistrowcounter;
+    margin-left: -24px;
+}
+.gw-number-rows .gfield_list thead tr:before {
+    content:'';
+}
+.gw-number-rows .gfield_list tbody tr:before {
+    content: counter(gflistrowcounter);
+    counter-increment: gflistrowcounter;
+}
+.gw-number-rows .gfield_list thead tr:before, .gw-number-rows .gfield_list tbody tr:before {
+    display: table-cell;
+    width: 18px;
+    text-align: right;
+    padding-right: 6px;
+}*/
+
+body .gw-number-rows .gfield_list.gfield_list_container {
+    counter-reset: gflistrowcounter;
+}
+
+.gw-number-rows .gfield_header_item:before {
+    content: '';
+}
+
+
+/* .gw-number-rows .gfield_header_item {
+    padding: 0px 0px 0px 67px;
+} */
+
+.gw-number-rows .gfield_list_group:before {
+    content: "Journée " counter(gflistrowcounter) " ";
+    counter-increment: gflistrowcounter;
+    padding-right: 30px;
+}
+.gw-number-rows .gfield_list_header:before{
+    content: "Journée X";
+    padding-right: 30px;    
+    visibility: hidden;
+}
+
+
+
+/* .gw-number-rows .gfield_header_item:before,
+.gw-number-rows .gfield_list_groupr:before {
+    display: table-cell;
+    width: 18px;
+    text-align: right;
+    padding-right: 6px;
+} */
